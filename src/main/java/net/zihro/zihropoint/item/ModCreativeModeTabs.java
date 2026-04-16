@@ -20,7 +20,11 @@ public class ModCreativeModeTabs {
                         .displayItems((pParameters, pOutput) -> {
                             pOutput.accept(ModItems.NICKEL_INGOT.get());
                             pOutput.accept(ModItems.RAW_NICKEL.get());
+                            pOutput.accept(ModItems.RAW_LEAD.get());
+                            pOutput.accept(ModItems.LEAD_INGOT.get());
                             pOutput.accept(ModBlocks.NICKEL_BLOCK.get());
+                            pOutput.accept(ModBlocks.LEAD_BLOCK.get());
+
 
                         })
                                 .build());

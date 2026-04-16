@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+    "item": "zihropoint:lead_block"
+    }
+  ],
+  "result": {
+    "item": "zihropoint:lead_ingot",
+    "count": 9
+  }
+
+}

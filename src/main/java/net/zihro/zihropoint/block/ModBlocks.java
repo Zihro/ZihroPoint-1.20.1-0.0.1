@@ -21,6 +21,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> NICKEL_BLOCK = registerBlock("nickel_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
 
 
 
