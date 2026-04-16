@@ -1,9 +1,15 @@
 {
+  //Raw and Ingot
+  "item.zihropoint.raw_nickel": "Raw Nickel",
+  "item.zihropoint.nickel_ingot": "Nickel Ingot",
 
 
 
 
+  //BLOCKS
+  "block.zihropoint.nickel_block": "Nickel Block",
 
 
-
+  //TABS
+  "creativetab.zihropoint_items": "ZihroPoint Items & Blocks"
 }

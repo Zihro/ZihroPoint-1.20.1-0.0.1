@@ -15,6 +15,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_NICKEL =ITEMS.register("raw_nickel",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NICKEL_INGOT =ITEMS.register("nickel_ingot",
+            () -> new Item(new Item.Properties()));
 
 
 

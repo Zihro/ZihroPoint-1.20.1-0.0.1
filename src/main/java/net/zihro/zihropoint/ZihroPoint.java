@@ -13,6 +13,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.zihro.zihropoint.block.ModBlocks;
+import net.zihro.zihropoint.item.ModCreativeModeTabs;
 import net.zihro.zihropoint.item.ModItems;
 import org.slf4j.Logger;
 
@@ -29,6 +31,8 @@ public class ZihroPoint
         IEventBus modEventBus = context.getModEventBus();
         //registerringclasses
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
 
 
@@ -50,6 +54,8 @@ public class ZihroPoint
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.RAW_NICKEL);
+            event.accept(ModItems.NICKEL_INGOT);
+
         }
     }
 
