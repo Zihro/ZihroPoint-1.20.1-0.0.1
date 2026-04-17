@@ -16,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.zihro.zihropoint.block.ModBlocks;
 import net.zihro.zihropoint.item.ModCreativeModeTabs;
 import net.zihro.zihropoint.item.ModItems;
+import net.zihro.zihropoint.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -33,6 +34,7 @@ public class ZihroPoint
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
 
 

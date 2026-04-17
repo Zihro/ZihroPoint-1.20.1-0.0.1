@@ -18,8 +18,21 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
+        //FOODS
+        simpleItem(ModItems.STRAWBERRY);
+        simpleItem(ModItems.RAW_RESIN);
+
+
+
         //items and tools
         simpleItem(ModItems.ORE_DETECTOR);
+
+        handheldItem(ModItems.ORICHALCUM_SHOVEL);
+        handheldItem(ModItems.ORICHALCUM_PICKAXE);
+        handheldItem(ModItems.ORICHALCUM_AXE);
+        handheldItem(ModItems.ORICHALCUM_SWORD);
+        handheldItem(ModItems.ORICHALCUM_HOE);
+
 
 
         //raw ores
@@ -29,6 +42,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_SILVER);
         simpleItem(ModItems.RAW_TITANIUM);
         simpleItem(ModItems.RAW_PLATINUM);
+        simpleItem(ModItems.SULFUR_DUST);
+        simpleItem(ModItems.RAW_ADAMANTIUM);
+        simpleItem(ModItems.RAW_ORICHALCUM);
+        simpleItem(ModItems.RAW_VIBRANIUM);
+
 
         //ingots
         simpleItem(ModItems.LEAD_INGOT);
@@ -37,7 +55,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SILVER_INGOT);
         simpleItem(ModItems.TITANIUM_INGOT);
         simpleItem(ModItems.PLATINUM_INGOT);
+        simpleItem(ModItems.VIBRANIUM_INGOT);
+        simpleItem(ModItems.ORICHALCUM_INGOT);
+        simpleItem(ModItems.ADAMANTIUM_INGOT);
 
+        //MISC
+        simpleItem(ModItems.COTTON);
+        simpleItem(ModItems.COTTON_SEEDS);
+
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(ZihroPoint.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){

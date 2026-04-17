@@ -25,6 +25,10 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModItems.RAW_SILVER.get());
                             pOutput.accept(ModItems.RAW_TITANIUM.get());
                             pOutput.accept(ModItems.RAW_PLATINUM.get());
+                            pOutput.accept(ModItems.RAW_RESIN.get());
+                            pOutput.accept(ModItems.SULFUR_DUST.get());
+
+
 
 
                             //ingots
@@ -39,6 +43,17 @@ public class ModCreativeModeTabs {
 
                             //extras
                             pOutput.accept(ModItems.ORE_DETECTOR.get());
+                            pOutput.accept(ModItems.STRAWBERRY.get());
+                            pOutput.accept(ModItems.COTTON.get());
+
+
+                            pOutput.accept(ModItems.ORICHALCUM_AXE.get());
+                            pOutput.accept(ModItems.ORICHALCUM_PICKAXE.get());
+                            pOutput.accept(ModItems.ORICHALCUM_SWORD.get());
+                            pOutput.accept(ModItems.ORICHALCUM_HOE.get());
+                            pOutput.accept(ModItems.ORICHALCUM_SHOVEL.get());
+
+
 
 
                             //ores / blocks
@@ -50,6 +65,10 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
                             pOutput.accept(ModBlocks.DEEPSLATE_SILVER_ORE.get());
                             pOutput.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
+                            pOutput.accept(ModBlocks.DEEPSLATE_VIBRANIUM_ORE.get());
+                            pOutput.accept(ModBlocks.DEEPSLATE_ORICHALCUM_ORE.get());
+                            pOutput.accept(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE.get());
+                            pOutput.accept(ModBlocks.SULFUR_ORE.get());
 
 
 

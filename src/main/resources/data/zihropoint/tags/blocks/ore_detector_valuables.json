@@ -1,0 +1,11 @@
+{
+  "values": [
+    "zihropoint:lead_ore",
+    "zihropoint:tin_ore",
+    "zihropoint:nickel_ore",
+    "zihropoint:deepslate_platinum_ore",
+    "zihropoint:deepslate_silver_ore",
+    "zihropoint:deepslate_titanium_ore",
+    "#forge:ores"
+  ]
+}
