@@ -18,12 +18,39 @@ public class ModCreativeModeTabs {
                 ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.RAW_NICKEL.get()))
                         .title(Component.translatable("creativetab.zihropoint_items"))
                         .displayItems((pParameters, pOutput) -> {
-                            pOutput.accept(ModItems.NICKEL_INGOT.get());
+                            //raws
                             pOutput.accept(ModItems.RAW_NICKEL.get());
                             pOutput.accept(ModItems.RAW_LEAD.get());
+                            pOutput.accept(ModItems.RAW_TIN.get());
+                            pOutput.accept(ModItems.RAW_SILVER.get());
+                            pOutput.accept(ModItems.RAW_TITANIUM.get());
+                            pOutput.accept(ModItems.RAW_PLATINUM.get());
+
+
+                            //ingots
                             pOutput.accept(ModItems.LEAD_INGOT.get());
+                            pOutput.accept(ModItems.NICKEL_INGOT.get());
+                            pOutput.accept(ModItems.TIN_INGOT.get());
+                            pOutput.accept(ModItems.PLATINUM_INGOT.get());
+                            pOutput.accept(ModItems.TITANIUM_INGOT.get());
+                            pOutput.accept(ModItems.SILVER_INGOT.get());
+
+
+
+                            //extras
+                            pOutput.accept(ModItems.ORE_DETECTOR.get());
+
+
+                            //ores / blocks
                             pOutput.accept(ModBlocks.NICKEL_BLOCK.get());
                             pOutput.accept(ModBlocks.LEAD_BLOCK.get());
+                            pOutput.accept(ModBlocks.LEAD_ORE.get());
+                            pOutput.accept(ModBlocks.TIN_ORE.get());
+                            pOutput.accept(ModBlocks.NICKEL_ORE.get());
+                            pOutput.accept(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
+                            pOutput.accept(ModBlocks.DEEPSLATE_SILVER_ORE.get());
+                            pOutput.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
+
 
 
                         })

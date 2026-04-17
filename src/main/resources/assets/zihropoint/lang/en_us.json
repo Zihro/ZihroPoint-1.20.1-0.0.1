@@ -2,6 +2,14 @@
   //Raw and Ingot
   "item.zihropoint.raw_nickel": "Raw Nickel",
   "item.zihropoint.nickel_ingot": "Nickel Ingot",
+  "item.zihropoint.raw_lead": "Raw Lead",
+  "item.zihropoint.lead_ingot": "Lead Ingot",
+
+
+
+  //tools
+  "item.zihropoint.ore_detector": "Ore Detector",
+
 
 
 
@@ -9,6 +17,8 @@
   //BLOCKS
   "block.zihropoint.nickel_block": "Nickel Block",
   "block.zihropoint.lead_block": "Lead Block",
+  "block.zihropoint.lead_ore": "Lead Ore",
+
 
 
 
