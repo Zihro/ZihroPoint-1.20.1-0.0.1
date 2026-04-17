@@ -3,7 +3,7 @@ package net.zihro.zihropoint.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.zihro.zihropoint.ZihroPoint;
-import net.zihro.zihropoint.block.ModBlocks;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 import net.zihro.zihropoint.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -22,6 +22,26 @@ public class ModEnUsProvider extends LanguageProvider {
 
         //Tooltips
         add("tooltip.zihropoint.ore_detector.tooltip", "Detects precious metals through solid rock.");
+
+
+
+        //MACHINES
+        add("block.zihropoint.solid_fuel_generator", "Solid Fuel Generator");
+
+        //MACHINE UIS
+        add("gui.zihropoint.energy_stored", "Energy Stored: %s FE");
+
+
+        //BLOCKS
+        add("block.zihropoint.rubber_log", "Rubber Log");
+        add("block.zihropoint.rubber_wood", "Rubber Wood");
+        add("block.zihropoint.stripped_rubber_log", "Stripped Rubber Log");
+        add("block.zihropoint.stripped_rubber_wood", "Stripped Rubber Wood");
+        add("block.zihropoint.rubber_planks", "Rubber Planks");
+        add("block.zihropoint.rubber_leaves", "Rubber Leaves");
+
+
+
         // --- Metals with Blocks ---
         addMetalSet(ModBlocks.LEAD_ORE, ModItems.RAW_LEAD, ModItems.LEAD_INGOT, ModBlocks.LEAD_BLOCK, "Lead");
 
@@ -58,7 +78,7 @@ public class ModEnUsProvider extends LanguageProvider {
         //Special Cases
         addDustSet(ModBlocks.SULFUR_ORE,ModItems.SULFUR_DUST,"Sulfur");
 
-        //foods
+        //foods and fuels
         add(ModItems.STRAWBERRY.get(), "Strawberry");
         add(ModItems.RAW_RESIN.get(), "Raw Resin");
 

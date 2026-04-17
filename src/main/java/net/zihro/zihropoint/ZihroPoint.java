@@ -1,7 +1,6 @@
 package net.zihro.zihropoint;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -13,7 +12,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.zihro.zihropoint.block.ModBlocks;
+import net.zihro.zihropoint.block.registration.ModBlockEntities;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 import net.zihro.zihropoint.item.ModCreativeModeTabs;
 import net.zihro.zihropoint.item.ModItems;
 import net.zihro.zihropoint.loot.ModLootModifiers;
@@ -35,6 +35,7 @@ public class ZihroPoint
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
 
 
 

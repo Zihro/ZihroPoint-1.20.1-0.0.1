@@ -13,9 +13,8 @@ import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
-import net.zihro.zihropoint.block.ModBlocks;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 import net.zihro.zihropoint.block.custom.CottonCropBlock;
 import net.zihro.zihropoint.item.ModItems;
 
@@ -33,6 +32,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.VIBRANIUM_BLOCK.get());
         this.dropSelf(ModBlocks.ADAMANTIUM_BLOCK.get());
         this.dropSelf(ModBlocks.ORICHALCUM_BLOCK.get());
+
+        this.dropSelf(ModBlocks.SOLID_FUEL_GENERATOR.get());
+
+        this.dropSelf(ModBlocks.STRIPPED_RUBBER_LOG.get());
+        this.dropSelf(ModBlocks.RUBBER_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_RUBBER_WOOD.get());
+        this.dropSelf(ModBlocks.RUBBER_WOOD.get());
+        this.dropSelf(ModBlocks.RUBBER_PLANKS.get());
+
+        this.add(ModBlocks.RUBBER_LEAVES.get(), block ->
+                createLeavesDrops(block,ModBlocks.LEAD_BLOCK.get(),NORMAL_LEAVES_SAPLING_CHANCES)); // TODO CHANGE TO SAPLING
+
 
 
         //ORES

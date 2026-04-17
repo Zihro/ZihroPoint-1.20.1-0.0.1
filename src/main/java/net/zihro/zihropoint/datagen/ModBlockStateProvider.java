@@ -4,13 +4,16 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.zihro.zihropoint.ZihroPoint;
-import net.zihro.zihropoint.block.ModBlocks;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 import net.zihro.zihropoint.block.custom.CottonCropBlock;
 
 import java.util.function.Function;
@@ -36,7 +39,27 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SULFUR_ORE);
 
 
+        //WOOD
+        logBlock(((RotatedPillarBlock) ModBlocks.RUBBER_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.RUBBER_WOOD.get()), blockTexture(ModBlocks.RUBBER_LOG.get()),blockTexture(ModBlocks.RUBBER_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_RUBBER_LOG.get()), blockTexture(ModBlocks.STRIPPED_RUBBER_LOG.get()),
+                new ResourceLocation(ZihroPoint.MOD_ID, "block/stripped_rubber_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_RUBBER_WOOD.get()), blockTexture(ModBlocks.STRIPPED_RUBBER_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_RUBBER_LOG.get()));
 
+        blockItem(ModBlocks.RUBBER_LOG);
+        blockItem(ModBlocks.RUBBER_WOOD);
+        blockItem(ModBlocks.STRIPPED_RUBBER_LOG);
+        blockItem(ModBlocks.STRIPPED_RUBBER_WOOD);
+
+        blockWithItem(ModBlocks.RUBBER_PLANKS);
+
+        leavesBlock(ModBlocks.RUBBER_LEAVES);
+
+
+
+        
+        
 
         //Mat Block
         blockWithItem(ModBlocks.LEAD_BLOCK);
@@ -46,6 +69,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         makeCottonCrop((CropBlock) ModBlocks.COTTON_CROP.get(), "cotton_stage", "cotton_stage");
 
     }
+
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void blockItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(ZihroPoint.MOD_ID +
+                ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
+    }
+
+
     public void makeCottonCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> cottonStates(state, block, modelName, textureName);
 

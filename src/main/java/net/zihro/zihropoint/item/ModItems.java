@@ -7,7 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.zihro.zihropoint.ZihroPoint;
-import net.zihro.zihropoint.block.ModBlocks;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 import net.zihro.zihropoint.item.custom.FuelItem;
 import net.zihro.zihropoint.item.custom.OreDetectorItem;
 
@@ -81,6 +81,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
     public static final RegistryObject<Item> COTTON_SEEDS =ITEMS.register("cotton_seeds",
             () -> new ItemNameBlockItem(ModBlocks.COTTON_CROP.get(), new Item.Properties()));
+
+    //Machines
+    public static final RegistryObject<Item> SOLID_FUEL_GENERATOR = ITEMS.register("solid_fuel_generator",
+            () -> new BlockItem(ModBlocks.SOLID_FUEL_GENERATOR.get(), new Item.Properties()));
 
     //MISC
     public static final RegistryObject<Item> COTTON =ITEMS.register("cotton",

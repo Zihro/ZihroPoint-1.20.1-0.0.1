@@ -6,7 +6,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.zihro.zihropoint.ZihroPoint;
-import net.zihro.zihropoint.block.ModBlocks;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 import org.jetbrains.annotations.Nullable;
 import net.zihro.zihropoint.util.ModTags;
 
@@ -38,6 +38,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SULFUR_ORE.get()
 
                 );
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.RUBBER_LOG.get(),
+                        ModBlocks.STRIPPED_RUBBER_LOG.get(),
+                        ModBlocks.RUBBER_WOOD.get(),
+                        ModBlocks.STRIPPED_RUBBER_WOOD.get());
+
+        this.tag(BlockTags.PLANKS).add(ModBlocks.RUBBER_PLANKS.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.LEAD_ORE.get(),

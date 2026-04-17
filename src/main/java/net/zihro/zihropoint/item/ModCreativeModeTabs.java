@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.zihro.zihropoint.ZihroPoint;
-import net.zihro.zihropoint.block.ModBlocks;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -70,6 +70,14 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE.get());
                             pOutput.accept(ModBlocks.SULFUR_ORE.get());
 
+
+                            //WOODS
+                            pOutput.accept(ModBlocks.RUBBER_LOG.get());
+                            pOutput.accept(ModBlocks.RUBBER_WOOD.get());
+                            pOutput.accept(ModBlocks.STRIPPED_RUBBER_WOOD.get());
+                            pOutput.accept(ModBlocks.STRIPPED_RUBBER_LOG.get());
+                            pOutput.accept(ModBlocks.RUBBER_PLANKS.get());
+                            pOutput.accept(ModBlocks.RUBBER_LEAVES.get());
 
 
                         })
