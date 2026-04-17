@@ -30,27 +30,27 @@ public class ModPlacedFeatures {
 
         //OW Ores
         register(context, TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TIN_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(13, // 12 veins per chunk
+                ModOrePlacement.commonOrePlacement(17, // 12 veins per chunk
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(112))));
 
         register(context, LEAD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_LEAD_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(9, // 12 veins per chunk
+                ModOrePlacement.commonOrePlacement(13, // 12 veins per chunk
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(32))));
 
         register(context, NICKEL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_NICKEL_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(7, // 12 veins per chunk
-                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(12))));
+                ModOrePlacement.commonOrePlacement(11, // 12 veins per chunk
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(20))));
 
-        register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TIN_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(2, // 12 veins per chunk
+        register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PLATINUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(6, // 12 veins per chunk
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-48))));
 
         register(context, TITANIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TITANIUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4, // 12 veins per chunk
+                ModOrePlacement.commonOrePlacement(8, // 12 veins per chunk
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(20))));
 
         register(context, SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SILVER_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(6, // 12 veins per chunk
+                ModOrePlacement.commonOrePlacement(10, // 12 veins per chunk
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(32))));
 
         //Nether Ores

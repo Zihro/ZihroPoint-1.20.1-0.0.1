@@ -42,30 +42,36 @@ public class ModConfiguredFeatures {
 
         //STONE ORES
         List<OreConfiguration.TargetBlockState> tinTarget = List.of(
-                OreConfiguration.target(stoneReplaceables, ModBlocks.TIN_ORE.get().defaultBlockState()));
-        register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(tinTarget, 8));
+                OreConfiguration.target(stoneReplaceables, ModBlocks.TIN_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.TIN_ORE.get().defaultBlockState()));
+        register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(tinTarget, 9));
 
         List<OreConfiguration.TargetBlockState> leadTarget = List.of(
-                OreConfiguration.target(stoneReplaceables, ModBlocks.LEAD_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(leadTarget, 7));
+                OreConfiguration.target(stoneReplaceables, ModBlocks.LEAD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.LEAD_ORE.get().defaultBlockState()));
+        register(context, OVERWORLD_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(leadTarget, 8));
 
         List<OreConfiguration.TargetBlockState> nickelTarget = List.of(
-                OreConfiguration.target(stoneReplaceables, ModBlocks.NICKEL_ORE.get().defaultBlockState()));
-        register(context, OVERWORLD_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(nickelTarget, 5));
+                OreConfiguration.target(stoneReplaceables, ModBlocks.NICKEL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.NICKEL_ORE.get().defaultBlockState()));
+        register(context, OVERWORLD_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(nickelTarget, 6));
 
 
         //DEEPSLATE ORES
         List<OreConfiguration.TargetBlockState> silverTarget = List.of(
-                OreConfiguration.target(deepslateReplaceables, ModBlocks.TIN_ORE.get().defaultBlockState()));
-        register(context, OVERWORLD_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(silverTarget, 4));
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_SILVER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(stoneReplaceables, ModBlocks.DEEPSLATE_SILVER_ORE.get().defaultBlockState()));
+        register(context, OVERWORLD_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(silverTarget, 5));
 
         List<OreConfiguration.TargetBlockState> platinumTarget = List.of(
-                OreConfiguration.target(deepslateReplaceables, ModBlocks.TIN_ORE.get().defaultBlockState()));
-        register(context, OVERWORLD_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(platinumTarget, 4));
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_PLATINUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(stoneReplaceables, ModBlocks.DEEPSLATE_PLATINUM_ORE.get().defaultBlockState()));
+        register(context, OVERWORLD_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(platinumTarget, 5));
 
         List<OreConfiguration.TargetBlockState> titaniumTarget = List.of(
-                OreConfiguration.target(deepslateReplaceables, ModBlocks.TIN_ORE.get().defaultBlockState()));
-        register(context, OVERWORLD_TITANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(titaniumTarget, 3));
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_TITANIUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(stoneReplaceables, ModBlocks.DEEPSLATE_TITANIUM_ORE.get().defaultBlockState()));
+        register(context, OVERWORLD_TITANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(titaniumTarget, 4));
 
         //NETHER ORES
         List<OreConfiguration.TargetBlockState> netherSulfurOre = List.of(
