@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "zihropoint:block/stripped_rubber_log",
+    "side": "zihropoint:block/stripped_rubber_log"
+  }
+}

@@ -1,0 +1,9 @@
+// 1.20.1	2026-04-17T12:30:40.5007673	Tags for minecraft:block mod id zihropoint
+878ac7d2378fd76169da453710b9a0b80c1bd462 data/minecraft/tags/blocks/logs_that_burn.json
+1c53fbfad3d2a2460dedb571da0507e90eafa078 data/minecraft/tags/blocks/mineable/pickaxe.json
+506b22a2af6f4cdea4fdc07dc714210e0aa69e26 data/minecraft/tags/blocks/needs_diamond_tool.json
+4f34f510929612af006f2e04d47ca65ee292fba6 data/minecraft/tags/blocks/needs_iron_tool.json
+9e98ba95fae4f82933c32fe47a9ede35a4cbfaa6 data/minecraft/tags/blocks/needs_stone_tool.json
+1d1ee53020a0e391b7df0ba16a590000b89a307b data/minecraft/tags/blocks/planks.json
+2dfdf3f19b97f66c7d24998d51f204077677723c data/zihropoint/tags/blocks/needs_orichalcum_tools.json
+8e357e3f7c565a1f4f6640e9b7508b3644d41c9d data/zihropoint/tags/blocks/needs_vibranium_tools.json

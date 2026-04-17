@@ -1,0 +1,4 @@
+// 1.20.1	2026-04-17T01:15:47.1956668	Global Loot Modifiers : zihropoint
+479646e5a3deaaac16b8769c8a60ec42f213c809 data/forge/loot_modifiers/global_loot_modifiers.json
+355f5a732e13f13be227239f12d905ab6d50212e data/zihropoint/loot_modifiers/ore_detector_from_jungle_temples.json
+f5a4e323f3cb46060558541b8e734046085c0ca4 data/zihropoint/loot_modifiers/sulfur_from_creep.json
