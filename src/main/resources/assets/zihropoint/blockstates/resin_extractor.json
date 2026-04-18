@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "zihropoint:block/resin_extractor" },
+    "facing=east":  { "model": "zihropoint:block/resin_extractor", "y": 90 },
+    "facing=south": { "model": "zihropoint:block/resin_extractor", "y": 180 },
+    "facing=west":  { "model": "zihropoint:block/resin_extractor", "y": 270 }
+  }
+}

@@ -20,6 +20,7 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> RUBBER_LOG = tag("rubber_log");
 
 
         private static TagKey<Item> tag(String name) {

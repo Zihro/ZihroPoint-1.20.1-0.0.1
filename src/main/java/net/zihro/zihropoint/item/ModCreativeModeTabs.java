@@ -28,6 +28,10 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModItems.RAW_RESIN.get());
                             pOutput.accept(ModItems.SULFUR_DUST.get());
 
+                            //MACHINES
+                            pOutput.accept(ModItems.RESIN_EXTRACTOR.get());
+                            pOutput.accept(ModItems.SOLID_FUEL_GENERATOR.get());
+
 
 
 
@@ -78,6 +82,13 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModBlocks.STRIPPED_RUBBER_LOG.get());
                             pOutput.accept(ModBlocks.RUBBER_PLANKS.get());
                             pOutput.accept(ModBlocks.RUBBER_LEAVES.get());
+                            pOutput.accept(ModBlocks.RUBBER_SAPLING.get());
+
+
+                            //machines
+                            /*pOutput.accept(ModBlocks.RESIN_EXTRACTOR.get());
+                            pOutput.accept(ModBlocks.SOLID_FUEL_GENERATOR.get());*/
+
 
 
                         })

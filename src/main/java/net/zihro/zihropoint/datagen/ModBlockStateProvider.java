@@ -67,7 +67,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         //Crops
         makeCottonCrop((CropBlock) ModBlocks.COTTON_CROP.get(), "cotton_stage", "cotton_stage");
+        saplingBlock(ModBlocks.RUBBER_SAPLING);
+    }
 
+
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject){
+        simpleBlock(blockRegistryObject.get());
+            models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout");
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {

@@ -5,11 +5,17 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
@@ -20,6 +26,10 @@ import java.util.List;
 import java.util.TimerTask;
 
 public class ModConfiguredFeatures {
+    //0.1 Trees
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RUBBER_KEY = registerKey("rubber");
+
+
     // 1. Define the ResourceKey for your ore
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TIN_ORE_KEY = registerKey("tin_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_NICKEL_ORE_KEY = registerKey("nickel_ore");
@@ -77,6 +87,18 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> netherSulfurOre = List.of(
                 OreConfiguration.target(netherReplaceables, ModBlocks.SULFUR_ORE.get().defaultBlockState()));
         register(context, NETHER_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(netherSulfurOre, 11));
+
+
+
+        //Tree
+        register(context,RUBBER_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.RUBBER_LOG.get()),
+                new StraightTrunkPlacer(5,2,2),
+
+                BlockStateProvider.simple(ModBlocks.RUBBER_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3),ConstantInt.of(2),3),
+
+                new TwoLayersFeatureSize(1,0,2)).build());
 
     }
 

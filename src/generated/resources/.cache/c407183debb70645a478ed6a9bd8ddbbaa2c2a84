@@ -1,3 +1,4 @@
-// 1.20.1	2026-04-17T12:30:40.5027672	Tags for minecraft:item mod id zihropoint
-878ac7d2378fd76169da453710b9a0b80c1bd462 data/minecraft/tags/items/logs_that_burn.json
+// 1.20.1	2026-04-17T16:38:23.8864658	Tags for minecraft:item mod id zihropoint
+1d495b5f36eae0e8fd23802769175cf040cb0efa data/minecraft/tags/items/logs_that_burn.json
 1d1ee53020a0e391b7df0ba16a590000b89a307b data/minecraft/tags/items/planks.json
+878ac7d2378fd76169da453710b9a0b80c1bd462 data/zihropoint/tags/items/rubber_log.json

@@ -6,10 +6,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,8 +16,10 @@ import net.minecraftforge.registries.RegistryObject;
 import net.zihro.zihropoint.ZihroPoint;
 import net.zihro.zihropoint.block.custom.CottonCropBlock;
 import net.zihro.zihropoint.block.custom.ModFlammableRotatablePillarBlock;
+import net.zihro.zihropoint.block.custom.ResinExtractorBlock;
 import net.zihro.zihropoint.block.custom.SolidFuelGeneratorBlock;
 import net.zihro.zihropoint.item.ModItems;
+import net.zihro.zihropoint.worldgen.tree.RubberTreeGrower;
 
 import java.util.function.Supplier;
 
@@ -78,6 +77,8 @@ public class ModBlocks {
     //Machines
     public static final RegistryObject<Block> SOLID_FUEL_GENERATOR = BLOCKS.register("solid_fuel_generator",
             () -> new SolidFuelGeneratorBlock());
+    public static final RegistryObject<Block> RESIN_EXTRACTOR = BLOCKS.register("resin_extractor",
+            () -> new ResinExtractorBlock());
 
 
     //Crops
@@ -131,6 +132,10 @@ public class ModBlocks {
                     return 30;
                 }
             });
+
+
+    public static final RegistryObject<Block> RUBBER_SAPLING = registerBlock("rubber_sapling",
+            ()-> new SaplingBlock(new RubberTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
 

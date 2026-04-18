@@ -3,12 +3,15 @@ package net.zihro.zihropoint.worldgen;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.zihro.zihropoint.ZihroPoint;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 
 import java.util.List;
 
@@ -21,6 +24,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
     public static final ResourceKey<PlacedFeature> TITANIUM_ORE_PLACED_KEY = registerKey("titanium_ore_placed");
     public static final ResourceKey<PlacedFeature> PLATINUM_ORE_PLACED_KEY = registerKey("platinum_ore_placed");
+    public static final ResourceKey<PlacedFeature> RUBBER_PLACED_KEY= registerKey("rubber_placed");
+
 
     // Nether Ores
     public static final ResourceKey<PlacedFeature> NETHER_SULFUR_ORE_PLACED_KEY = registerKey("nether_sulfur_ore_placed");
@@ -57,6 +62,14 @@ public class ModPlacedFeatures {
         register(context, NETHER_SULFUR_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SULFUR_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(14,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(114))));
+
+        //Tree
+
+        register(context, RUBBER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBBER_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1,0.1f,1),
+                        ModBlocks.RUBBER_SAPLING.get()));
+
+
 
     }
 

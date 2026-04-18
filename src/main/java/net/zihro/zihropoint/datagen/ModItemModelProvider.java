@@ -3,11 +3,13 @@ package net.zihro.zihropoint.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.zihro.zihropoint.ZihroPoint;
+import net.zihro.zihropoint.block.registration.ModBlocks;
 import net.zihro.zihropoint.item.ModItems;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -62,7 +64,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         //MISC
         simpleItem(ModItems.COTTON);
         simpleItem(ModItems.COTTON_SEEDS);
+        saplingItem(ModBlocks.RUBBER_SAPLING);
 
+    }
+
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(ZihroPoint.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item){

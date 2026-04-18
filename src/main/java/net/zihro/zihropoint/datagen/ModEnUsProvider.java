@@ -27,6 +27,8 @@ public class ModEnUsProvider extends LanguageProvider {
 
         //MACHINES
         add("block.zihropoint.solid_fuel_generator", "Solid Fuel Generator");
+        add("block.zihropoint.resin_extractor", "Resin Extractor");
+
 
         //MACHINE UIS
         add("gui.zihropoint.energy_stored", "Energy Stored: %s FE");
@@ -39,6 +41,8 @@ public class ModEnUsProvider extends LanguageProvider {
         add("block.zihropoint.stripped_rubber_wood", "Stripped Rubber Wood");
         add("block.zihropoint.rubber_planks", "Rubber Planks");
         add("block.zihropoint.rubber_leaves", "Rubber Leaves");
+        add("block.zihropoint.rubber_sapling", "Rubber Sapling");
+
 
 
 

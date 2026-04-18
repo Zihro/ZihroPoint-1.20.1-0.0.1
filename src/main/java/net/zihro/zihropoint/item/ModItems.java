@@ -85,6 +85,8 @@ public class ModItems {
     //Machines
     public static final RegistryObject<Item> SOLID_FUEL_GENERATOR = ITEMS.register("solid_fuel_generator",
             () -> new BlockItem(ModBlocks.SOLID_FUEL_GENERATOR.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RESIN_EXTRACTOR = ITEMS.register("resin_extractor",
+            () -> new BlockItem(ModBlocks.RESIN_EXTRACTOR.get(), new Item.Properties()));
 
     //MISC
     public static final RegistryObject<Item> COTTON =ITEMS.register("cotton",

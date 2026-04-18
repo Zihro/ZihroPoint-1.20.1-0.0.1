@@ -1,4 +1,4 @@
-// 1.20.1	2026-04-17T12:24:46.6139234	Loot Tables
+// 1.20.1	2026-04-17T16:26:55.6642964	Loot Tables
 355e4ed89f27f428542fa5db01b06c743f131f6d data/zihropoint/loot_tables/blocks/adamantium_block.json
 ecda93ca1ac6560a4d4b246576b3dabf6236cb24 data/zihropoint/loot_tables/blocks/cotton_crop.json
 b051e5799f4e7f6709dc6318379d2b2c3dd6c646 data/zihropoint/loot_tables/blocks/deepslate_adamantium_ore.json
@@ -12,9 +12,11 @@ d7564b4ee36aca720e6d42a3b857f0f91aeceab8 data/zihropoint/loot_tables/blocks/deep
 89adfd10b00f72978e276be06a3cb363ad760688 data/zihropoint/loot_tables/blocks/nickel_block.json
 7a7e1f34bb0d3995c5a2fd6e45bfe006daf90fb7 data/zihropoint/loot_tables/blocks/nickel_ore.json
 bf832a376d67908ae6c8a38cf61bf1d4b7d2aea0 data/zihropoint/loot_tables/blocks/orichalcum_block.json
-ccfba639debc171a579fec10577deece2d423f26 data/zihropoint/loot_tables/blocks/rubber_leaves.json
+72227edb2ed8d3cd1eeb39a1e8faa6e3a13aede0 data/zihropoint/loot_tables/blocks/resin_extractor.json
+b0ab64048ed8ac85711ba8676d0ebdb8538d6abb data/zihropoint/loot_tables/blocks/rubber_leaves.json
 b1bbbf7abab16ef2d68f8b6995df85fbd0352fea data/zihropoint/loot_tables/blocks/rubber_log.json
 bc4a2a6ad00bb59419f8615a05a6f66c7dbe30ea data/zihropoint/loot_tables/blocks/rubber_planks.json
+db163a1ef3f7d64d630445fcf87187d5c4be507d data/zihropoint/loot_tables/blocks/rubber_sapling.json
 73d8ae0f978f8b2199b03c65d0a4d51e57eb208d data/zihropoint/loot_tables/blocks/rubber_wood.json
 7fa51a8e02ec639ba612f85306e50f863ce96239 data/zihropoint/loot_tables/blocks/solid_fuel_generator.json
 74017f2a18a577edf03d4fb4f1127ad6c4d38b06 data/zihropoint/loot_tables/blocks/stripped_rubber_log.json

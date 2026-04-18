@@ -1,8 +1,5 @@
 {
   "values": [
-    "zihropoint:rubber_log",
-    "zihropoint:stripped_rubber_log",
-    "zihropoint:rubber_wood",
-    "zihropoint:stripped_rubber_wood"
+    "#zihropoint:rubber_log"
   ]
 }

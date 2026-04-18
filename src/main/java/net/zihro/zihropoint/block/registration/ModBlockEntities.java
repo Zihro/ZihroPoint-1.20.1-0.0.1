@@ -6,7 +6,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.zihro.zihropoint.ZihroPoint;
+import net.zihro.zihropoint.block.custom.ResinExtractorBlock;
 import net.zihro.zihropoint.block.custom.SolidFuelGeneratorBlock;
+import net.zihro.zihropoint.block.entity.ResinExtractorBlockEntity;
 import net.zihro.zihropoint.block.entity.SolidFuelGeneratorBlockEntity;
 
 public class ModBlockEntities {
@@ -22,6 +24,17 @@ public class ModBlockEntities {
                                     state
                             ),
                             ModBlocks.SOLID_FUEL_GENERATOR.get()
+                    ).build(null));
+
+    public static final RegistryObject<BlockEntityType<ResinExtractorBlockEntity>> RESIN_EXTRACTOR =
+            BLOCK_ENTITIES.register("resin_extractor",
+                    () -> BlockEntityType.Builder.of(
+                            (pos, state) -> new ResinExtractorBlockEntity(
+                                    (ResinExtractorBlock) ModBlocks.RESIN_EXTRACTOR.get(), // Cast to specific block class
+                                    pos,
+                                    state
+                            ),
+                            ModBlocks.RESIN_EXTRACTOR.get()
                     ).build(null));
 
 
